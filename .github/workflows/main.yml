@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: Send HTTP Request
         run: |
-          curl -X POST "https://your-external-endpoint.com/webhook" \
+          curl -X POST "https://f3a1-112-134-154-68.ngrok-free.app/web-api/servers/trigger-deployment" \
           -H "Content-Type: application/json" \
           -d '{
             "repository": "${{ github.repository }}",
